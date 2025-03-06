@@ -6,11 +6,11 @@ public class RegistroAcademico {
     private int codigoCurso;
     private float percentualDeCobranca;
 
-    public void inicializaRegistroAcademico(String n, String m, int c, float p){
-        nome = n;
-        matricula = m;
-        codigoCurso = c;
-        percentualDeCobranca = p;
+    public void inicializaRegistroAcademico(String nome, String matricula, int codicoCurso, float percentualDeCobranca){
+        this.nome = nome;
+        this.matricula = matricula;
+        this.codigoCurso = codicoCurso;
+        this.percentualDeCobranca = percentualDeCobranca;
     }
 
 
