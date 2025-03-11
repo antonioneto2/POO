@@ -18,8 +18,9 @@ public class JogoDeDama {
         String rep = "";
         for (int l = 0; l < tabuleiro.length; l++) {
             for(int c =0; c < tabuleiro[l].length; c++){
-                rep += tabuleiro[l][c];
+                rep += tabuleiro[l][c] + "  ";
             }
+            rep += "\n";
         }
         return rep;
     }
