@@ -5,27 +5,29 @@ import java.util.Scanner;
 public class Pascal {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int nLinhas;
+        int linhas, colunas;
 
-        System.out.println("Quantidade de linhas: ");
-        nLinhas = sc.nextInt();
-        int[][] triag = new int[nLinhas][];
+        System.out.print("Linhas: ");
+        linhas = sc.nextInt();
+        int[][] triangulo = new int[linhas][];
 
-        for (int l = 0; l < triag.length; l++) {
-            triag[l] = new int[l+2];
-            triag[l][0] = 1;
-            triag[l][l+1] = 1;
-            for (int c = 0; c < triag.length-1; c++) {
-                triag[l][c] = triag[l-1][c] + triag[l-1][c-1];
+        for (int linha = 0; linha < linhas; linha++) {
+            colunas = linha + 2;
+            triangulo[linha] = new int[colunas];
+            triangulo[linha][0] = 1;
+            triangulo[linha][colunas - 1] = 1;
+            for (int c = 1; c < triangulo[linha].length-1; c++) {
+                triangulo[linha][c] = triangulo[linha-1][c] + triangulo[linha-1][c-1];
             }
         }
 
-        for (int l = 0; l < triag.length; l++) {
-            for (int c = 0; c < triag.length; c++) {
-                System.out.print(triag[l][c] + " ");
+        for (int lin = 0; lin < triangulo.length; lin++) {
+            for (int col = 0; col < triangulo[lin].length; col++) {
+                System.out.print(triangulo[lin][col] + " ");
             }
             System.out.println();
         }
+
         sc.close();
     }
 }
