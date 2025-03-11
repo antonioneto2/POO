@@ -20,6 +20,7 @@ public class JogoDeDama {
                 tabuleiro[l][c] = 'o';
             }
         }
+        
         //time 'x'
         for (int l = 5; l <= 7; l++) {
             int comeco = (l%2==0) ? 1 : 0;
