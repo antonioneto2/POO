@@ -12,5 +12,8 @@ public class Funcionario extends Pessoa {
         return salario;
     }
 
-    
+    @Override
+    public String toString() {
+        return super.toString() + " salario=" + salario;
+    }
 }

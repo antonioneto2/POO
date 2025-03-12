@@ -10,5 +10,16 @@ public class ChefeDeDepartamento extends Funcionario {
 
     public String getDepartamento() {
         return departamento;
-    }    
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + " departamento=" + departamento;
+    }
+    
+    
+/*  public String toString(){
+        return "Nome: " + getNome() + "; " + "Identidade: " + getIdentidade() + "; " + "Departamento : " + departamento;
+    }
+ */
 }
