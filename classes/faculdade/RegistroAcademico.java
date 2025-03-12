@@ -13,8 +13,13 @@ public class RegistroAcademico {
         this.percentualDeCobranca = percentualDeCobranca;
     }
 
-
     public float calculaMensalidade(){
         return 100 * codigoCurso * percentualDeCobranca;
     }
+
+    public String toString() {
+        return "RegistroAcademico [nome=" + nome + ", matricula=" + matricula + ", codigoCurso=" + codigoCurso
+                + ", percentualDeCobranca=" + percentualDeCobranca + "]";
+    }
+
 }
