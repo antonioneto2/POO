@@ -12,7 +12,7 @@ public class RegistroAcademico {
     }
 
     public String toString() {
-        return "Nome: " + nomeDoAulno + "; "+ "Matricula: " + matricula + "; "+ "Curso: " + curso;
+        return "Nome: " + nomeDoAulno + "; "+ "Matricula: " + matricula + "; "+ "Curso: " + curso + ";";
     }
     
 
