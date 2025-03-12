@@ -21,7 +21,4 @@ public class Pessoa {
     public String toString() {
         return "nome=" + nome + ", identidade=" + identidade;
     }
-
-    
-    
 }
