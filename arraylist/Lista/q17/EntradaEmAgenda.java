@@ -13,9 +13,10 @@ public class EntradaEmAgenda {
     }
     
     public String toString() {
-        return hora + " hora(s) " + "\n" + dia + "/" + mes + "/" + ano + "\n" + assunto;
+        return "[" +  dia + "/" + mes + "/" + ano + " - " + hora + "h] " + assunto;
     }
-
     
-    
+    public boolean ehNoDia(int dia, int mes, int ano) {
+        return this.dia == dia && this.mes == mes && this.ano == ano;
+    }
 }
