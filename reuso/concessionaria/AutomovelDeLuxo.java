@@ -17,5 +17,20 @@ public class AutomovelDeLuxo extends AutomovelBasico {
         if (direcaoHidraulica) custo += 17000;
         return custo;
     }
+
+    @Override
+    public String toString() {
+        String res;
+        res = "AutomovelDeLuxo [";
+        res += "ano=" + getAno();
+        res += ", modelo=" + getModelo();
+        res += ", cor=" + getCor();
+        res += ", arCondicionado=" + (arCondicionado? "sim" : "nao");
+        res += ", radio=" + (isRadio()? "sim" : "nao");
+        res += ", direcaoHidraulica" + (direcaoHidraulica? "sim" : "nao");
+        res += ", custo=" + quantoCusta();
+        res += "]";
+        return res;
+    }
     
 }

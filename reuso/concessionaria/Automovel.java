@@ -15,4 +15,15 @@ public class Automovel {
         return (ano < 2010 ? 60000F : 90000F);
     }
 
+    public int getAno() {
+        return ano;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public String getCor() {
+        return cor;
+    }   
 }
