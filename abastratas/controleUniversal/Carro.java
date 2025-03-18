@@ -8,6 +8,11 @@ public class Carro extends Terrestre {
         this.placa = placa;
     }
 
+    public Carro(String placa) {
+        super(5, 4);
+        this.placa = placa;
+    }
+
     public void moverFrente() {
         System.out.println("Carro movendo para frente");
     }
