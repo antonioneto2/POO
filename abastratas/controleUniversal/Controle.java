@@ -1,15 +1,7 @@
 package abastratas.controleUniversal;
 
-public class Controle {
-    public void controlar(Aviao aviao) {
-        aviao.moverFrente();
-    }
-
-    public void controlar(Carro carro) {
-        carro.moverFrente();
-    }
-
-    public void controlar(Barco barco) {
-        barco.moverFrente();
+public abstract class Controle {
+    public static void controlar(Veiculo veiculo) {
+        veiculo.moverFrente();
     }
 }
