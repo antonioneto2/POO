@@ -6,7 +6,10 @@ public class DemoControle {
         Carro carro = new Carro(5, 4, "NKP7475");
         Aviao aviao = new Aviao(42, "oj0987", "qwr-podr");
         System.out.println(barco);
+        barco.moverFrente();
         System.out.println(carro);
+        carro.moverFrente();
         System.out.println(aviao);
+        aviao.moverFrente();
 }   
 }

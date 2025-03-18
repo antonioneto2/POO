@@ -1,6 +1,6 @@
 package abastratas.controleUniversal;
 
-public class Aereo extends Veiculo {
+public abstract class Aereo extends Veiculo {
     private String cadANAC;
 
     public Aereo(int capacidade, String cadANAC) {

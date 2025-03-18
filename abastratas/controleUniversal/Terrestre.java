@@ -1,6 +1,6 @@
 package abastratas.controleUniversal;
 
-public class Terrestre extends Veiculo{
+public abstract class Terrestre extends Veiculo{
     private int qtdRodas;
 
     public Terrestre(int capacidade, int qtdRodas) {

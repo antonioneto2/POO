@@ -1,6 +1,6 @@
 package abastratas.controleUniversal;
 
-public class Aquatico extends Veiculo {
+public abstract class Aquatico extends Veiculo {
     private float profundidade;
 
     public Aquatico(int capacidade, float profundidade) {
