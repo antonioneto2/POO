@@ -1,13 +1,10 @@
 package abastratas.controleUniversal;
 
-public class Aviao {
-    private int capacidade;
-    private String cadANAC;
+public class Aviao extends Aereo {
     private String cadAviao;
     
     public Aviao(int capacidade, String cadANAC, String cadAviao) {
-        this.capacidade = capacidade;
-        this.cadANAC = cadANAC;
+        super(capacidade, cadANAC);
         this.cadAviao = cadAviao;
     }
 
@@ -17,8 +14,6 @@ public class Aviao {
 
     @Override
     public String toString() {
-        return "capacidade=" + capacidade + ", cadANAC=" + cadANAC + ", cadAviao=" + cadAviao;
+        return super.toString() + ", cadAviao=" + cadAviao;
     }
-
-    
 }

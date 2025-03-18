@@ -1,13 +1,10 @@
 package abastratas.controleUniversal;
 
-public class Carro {
-    private int capacidade;
-    private int qtdRodas;
+public class Carro extends Terrestre {
     private String placa;
     
     public Carro(int capacidade, int qtdRodas, String placa) {
-        this.capacidade = capacidade;
-        this.qtdRodas = qtdRodas;
+        super(capacidade, qtdRodas);
         this.placa = placa;
     }
 
@@ -17,6 +14,6 @@ public class Carro {
 
     @Override
     public String toString() {
-        return "capacidade=" + capacidade + ", qtdRodas=" + qtdRodas + ", placa=" + placa;
+        return super.toString() + ", placa=" + placa;
     }    
 }

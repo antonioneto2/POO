@@ -1,13 +1,10 @@
 package abastratas.controleUniversal;
 
-public class Barco {
-    private int capacidade;
-    private float profundidade;
+public class Barco extends Aquatico{
     private String cadBarco;
     
     public Barco(int capacidade, float profundidade, String cadBarco) {
-        this.capacidade = capacidade;
-        this.profundidade = profundidade;
+        super(capacidade, profundidade);
         this.cadBarco = cadBarco;
     }
 
@@ -17,6 +14,6 @@ public class Barco {
 
     @Override
     public String toString() {
-        return "capacidade=" + capacidade + ", profundidade=" + profundidade + ", cadBarco=" + cadBarco;
+        return super.toString() + ", cadBarco=" + cadBarco;
     }
 }
