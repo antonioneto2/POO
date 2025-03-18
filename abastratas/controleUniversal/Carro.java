@@ -11,8 +11,12 @@ public class Carro {
         this.placa = placa;
     }
 
+    public void moverFrente() {
+        System.out.println("Carro movendo para frente");
+    }
+
     @Override
     public String toString() {
-        return "Carro [capacidade=" + capacidade + ", qtdRodas=" + qtdRodas + ", placa=" + placa + "]";
+        return "capacidade=" + capacidade + ", qtdRodas=" + qtdRodas + ", placa=" + placa;
     }    
 }
