@@ -13,9 +13,9 @@ public class DemoBanco {
         saldo = sc.nextFloat();
         sc.close();
 
-        ContaBancaria c1 = new ContaBancaria("Antonio");
+        ContaBancaria c1 = new ContaBancaria(nome);
         System.out.println(c1);
-        ContaBancaria c2 = new ContaBancaria("Neto", 800, true);
+        ContaBancaria c2 = new ContaBancaria(nome, saldo, true);
         System.out.println(c2);
     }
 }
