@@ -10,6 +10,7 @@ public class ExemploFila {
         fila.offer(3.5);
         fila.offer(2.5);
         fila.offer(1.5);
+        
         System.out.println(fila);
         System.out.println(fila.poll());
         System.out.println(fila.poll());
