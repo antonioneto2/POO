@@ -1,0 +1,3 @@
+Na classe abstrata não pode ser criado objetos.
+Em resumo, construtores abstratos não são permitidos em Java porque conflitam com o propósito dos construtores (inicialização de objetos) e das classes abstratas (definir um modelo para subclasses). Construtores precisam ser concretos para que possam ser chamados durante a criação de objetos, enquanto métodos abstratos são usados para definir comportamentos que as subclasses devem implementar.
+
