@@ -3,12 +3,13 @@ package abastratas.Lista.q41;
 import abastratas.Lista.q40.FiguraGeometrica;
 
 public class Desenho {
-    FiguraGeometrica fig1;
-    int xfig1;
-    int yfig1;
-    FiguraGeometrica fig2;
-    int xfig2;
-    int yfig2;
+    private FiguraGeometrica fig1;
+    private int xfig1;
+    private int yfig1;
+    private FiguraGeometrica fig2;
+    private int xfig2;
+    private int yfig2;
+
     public Desenho(FiguraGeometrica fig1, int xfig1, int yfig1, FiguraGeometrica fig2, int xfig2, int yfig2) {
         this.fig1 = fig1;
         this.xfig1 = xfig1;
@@ -24,6 +25,4 @@ public class Desenho {
         System.out.print("Cordenadas: (" + xfig2 + "," + yfig2 + ")\nFigura: ");
         fig2.descricao(); 
     }
-
-
 }
