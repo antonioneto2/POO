@@ -8,4 +8,13 @@ public abstract class Empregado implements Pagavel {
         this.nome = nome;
         this.ctps = ctps;
     }
+
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getCtps() {
+        return ctps;
+    }
 }
